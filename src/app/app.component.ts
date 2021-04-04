@@ -10,15 +10,6 @@ export class AppComponent {
     title = 'RIGx';
     
 }
-//     name = 'ayush';
-
-//     getName() {
-//         return 'peter';
-//     }
-
-//     getObjName() {
-//         return this.name;
-//     }
 
 //     obj = {
 //         name:'kelly',
