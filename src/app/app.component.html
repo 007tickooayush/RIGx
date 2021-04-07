@@ -1,4 +1,34 @@
-<h1> {{title}} </h1>
+<div class="container" *ngIf="show else elseBlock">
+    if block
+</div>
+<ng-template #elseBlock>
+    <div class="container">
+        else block
+    </div>
+</ng-template>
+
+<div class="container" *ngIf="showStr=='yes';then elseBlock2">
+    if block
+</div>
+<ng-template #ifBlock2>
+    <div class="container">
+        if block
+    </div>
+</ng-template>
+<ng-template #elseBlock2>
+    <div class="container">
+        else block
+    </div>
+</ng-template>
+
+<ng-template [ngIf]="showClr=='red'">
+    <div class="alert alert-primary" role="alert">
+        red
+    </div>
+</ng-template>
+
+
+<!-- <h1> {{title}} </h1>
 
 <div class="container">
     <input type="text" [disabled]="disabledBox" [value]="name"/>
@@ -10,4 +40,4 @@
 
 <div class="container">
     <button (click)="enableBox()" >button</button>
-</div>
+</div> -->

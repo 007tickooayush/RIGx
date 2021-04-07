@@ -10,11 +10,13 @@ export class AppComponent {
     title = 'RIGx';
     
     name = ''
+    show=false
+    showStr='yes'
+    showClr='red'
+    // disabledBox = true
 
-    disabledBox = true
-
-    enableBox(){
-        this.disabledBox = false
-    }
+    // enableBox(){
+    //     this.disabledBox = false
+    // }
 }
 
