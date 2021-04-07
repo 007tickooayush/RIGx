@@ -10,5 +10,9 @@ export class AppComponent {
     title = 'RIGx';
     
     creation = 'new site'
+
+    myEvent(evt:string){
+        console.log(evt)
+    }
 }
 

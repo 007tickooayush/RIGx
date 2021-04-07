@@ -1,2 +1,21 @@
 <h1> {{title}} </h1>
+<app-login></app-login>
+<button (click)="myEvent(creation)">get name</button>
+<div class="container">
+    <input type="text"  #box (keyup.space)="myEvent(box.value)">
+</div>
+<div class="container">
+    <input type="text"  #box (blur)="myEvent('blue event')">
+</div>
 
+<div class="container" (mouseover)="myEvent('mouse over')">
+    <h1 style="background-color:skyblue;">
+        mouseover
+    </h1>
+</div>
+
+<div class="container" (mouseleave)="myEvent('mouse leave')">
+    <h1 style="background-color:red;">
+        mouseover
+    </h1>
+</div>
