@@ -10,9 +10,10 @@ export class AppComponent {
     title = 'RIGx';
     
     creation = 'new site'
-
-    myEvent(evt:string){
-        console.log(evt)
+    currentVal = ''
+    getVal(val){
+        console.log(val)
+        this.currentVal = val
     }
 }
 
