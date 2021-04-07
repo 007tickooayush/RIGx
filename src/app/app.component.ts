@@ -9,11 +9,12 @@ import {Component} from '@angular/core';
 export class AppComponent {
     title = 'RIGx';
     
-    creation = 'new site'
-    currentVal = ''
-    getVal(val){
-        console.log(val)
-        this.currentVal = val
+    name = ''
+
+    disabledBox = true
+
+    enableBox(){
+        this.disabledBox = false
     }
 }
 
